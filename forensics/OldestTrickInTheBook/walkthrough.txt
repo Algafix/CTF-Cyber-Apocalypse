@@ -1,0 +1,25 @@
+
+El fitxer .pcap te masses pings (Wireshark statistics protocol hierarchy)
+
+A les dades dels pings veiem strings raros de text i despres coses random. El primer paquet enviat te un PK als primers bytes. Es un zip. Pero les dades estan repetides 3 cops per paquet.
+
+Extraiem les dades a un fixer amb tshark:
+	
+	$ tshark -r older_trick.pcap -T fields -e data.data -Y 'icmp.type == 8' > icmp8_data.txt
+
+Sabent que el magic number es un PK, trobem els offsets de la repeticio al primer paquet i despres repetim a tots els altres paquets. Fem unzip de l'arxiu de bytes.
+
+	$ python extract_data.py
+
+Carpeta fini. Moltes coses .db i .sqlite. No aconseguim llegir res be. Veiem coses de mozila, buscant resulta ser un perfil de mozilla.
+
+Fem servir mozilla per carregar-lo. Anem a mozilla 'about:profiles' i creem un nou profile. El nom es igual. El posem per default. Copiem l'adreça root de les dues '/home/kali/.mozilla/firefox/2wj687zs.ctf'.
+
+Tanquem firefox. Anem al wd i copiem els fitxers que volguem sobreescriure. En aquest cas serveix amb el 'key4.db'.
+
+Tornem a obrir firefox, anem als logins and pwd's i tachan, el tenim alla. 
+
+CHTB{long_time_no_s33_icmp}
+
+
+

@@ -1,0 +1,52 @@
+┌ 130: sym.checkpin (char *arg1);
+│           ; var char *s @ rbp-0x28
+│           ; var int64_t var_1eh @ rbp-0x1e
+│           ; var uint32_t var_1dh @ rbp-0x1d
+│           ; var int64_t var_1ch @ rbp-0x1c
+│           ; var char *var_18h @ rbp-0x18
+│           ; arg char *arg1 @ rdi
+│           0x00000959      55             push rbp
+│           0x0000095a      4889e5         mov rbp, rsp
+│           0x0000095d      53             push rbx
+│           0x0000095e      4883ec28       sub rsp, 0x28
+│           0x00000962      48897dd8       mov qword [s], rdi          ; arg1
+│           0x00000966      c645e209       mov byte [var_1eh], 9
+│           0x0000096a      488d05270200.  lea rax, qword str.a:Vh__a:g_8j__89gV_p__:dV8_Vg9_V_9V_:j__: ; 0xb98 ; "}a:Vh|}a:g}8j=}89gV<p<}:dV8<Vg9}V<9V<:j|{:"
+│           0x00000971      488945e8       mov qword [var_18h], rax
+│           0x00000975      c745e4000000.  mov dword [var_1ch], 0
+│       ┌─< 0x0000097c      eb36           jmp 0x9b4
+│       │   ; CODE XREF from sym.checkpin @ 0x9cd
+│      ┌──> 0x0000097e      8b45e4         mov eax, dword [var_1ch]
+│      ╎│   0x00000981      4863d0         movsxd rdx, eax
+│      ╎│   0x00000984      488b45e8       mov rax, qword [var_18h]
+│      ╎│   0x00000988      4801d0         add rax, rdx
+│      ╎│   0x0000098b      0fb600         movzx eax, byte [rax]
+│      ╎│   0x0000098e      3245e2         xor al, byte [var_1eh]
+│      ╎│   0x00000991      8845e3         mov byte [var_1dh], al
+│      ╎│   0x00000994      8b45e4         mov eax, dword [var_1ch]
+│      ╎│   0x00000997      4863d0         movsxd rdx, eax
+│      ╎│   0x0000099a      488b45d8       mov rax, qword [s]
+│      ╎│   0x0000099e      4801d0         add rax, rdx
+│      ╎│   0x000009a1      0fb600         movzx eax, byte [rax]
+│      ╎│   0x000009a4      3845e3         cmp byte [var_1dh], al
+│     ┌───< 0x000009a7      7407           je 0x9b0
+│     │╎│   0x000009a9      b801000000     mov eax, 1
+│    ┌────< 0x000009ae      eb24           jmp 0x9d4
+│    ││╎│   ; CODE XREF from sym.checkpin @ 0x9a7
+│    │└───> 0x000009b0      8345e401       add dword [var_1ch], 1
+│    │ ╎│   ; CODE XREF from sym.checkpin @ 0x97c
+│    │ ╎└─> 0x000009b4      8b45e4         mov eax, dword [var_1ch]
+│    │ ╎    0x000009b7      4863d8         movsxd rbx, eax
+│    │ ╎    0x000009ba      488b45d8       mov rax, qword [s]
+│    │ ╎    0x000009be      4889c7         mov rdi, rax                ; const char *s
+│    │ ╎    0x000009c1      e88afdffff     call sym.imp.strlen         ; size_t strlen(const char *s)
+│    │ ╎    0x000009c6      4883e801       sub rax, 1
+│    │ ╎    0x000009ca      4839c3         cmp rbx, rax
+│    │ └──< 0x000009cd      72af           jb 0x97e
+│    │      0x000009cf      b800000000     mov eax, 0
+│    │      ; CODE XREF from sym.checkpin @ 0x9ae
+│    └────> 0x000009d4      4883c428       add rsp, 0x28
+│           0x000009d8      5b             pop rbx
+│           0x000009d9      5d             pop rbp
+└           0x000009da      c3             ret
+

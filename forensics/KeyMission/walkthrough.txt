@@ -1,0 +1,26 @@
+
+
+Com funcionen els dispositius HID. Apendix B report keyboard.
+	https://www.usb.org/sites/default/files/documents/hid1_11.pdf
+
+Per saber com es tradueix cada tecla (Apartat 10):
+	https://usb.org/sites/default/files/hut1_22.pdf
+
+Per extreure les dades del Wireshark:
+
+1. Fer una columna amb el leftovers data and export to csv
+
+2. Fer servir tshark.
+	-r infile
+	-T format de la sortida ek|fields|json|jsonraw|pdml|ps|psml|tabs|text
+	-e camp a mostrat si -T ek|fields|json|pdml. Mateixos identificadors que wireshark.
+
+	sed -r aplica extended regex
+	'/^\s*$/d' selecciona nomes strings per cada linia
+
+
+	tshark -r key_mission.pcap -T fields -e usb.capdata | sed -r '/^\s*$/d'
+
+
+
+

